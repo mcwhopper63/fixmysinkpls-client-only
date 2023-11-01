@@ -1,11 +1,8 @@
 import { Link } from 'react-router-dom';
+import Wrapper from '../assets/wrappers/RegisterPage';
+import { Logo } from '../components';
 
 const Login = () => {
-    return (
-        <div>
-            <h1>Login Page</h1>
-            <Link to="/register">Register Page</Link>
-        </div>
-    );
+    return <h1></h1>;
 };
 export default Login;

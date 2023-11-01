@@ -109,7 +109,7 @@ npm install normalize.css
 -   [Styled Components Course](https://www.udemy.com/course/styled-components-tutorial-and-project-course/?referralCode=9DABB172FCB2625B663F)
 
 ```sh
-npm install styled-components
+npm install styled-**components**
 ```
 
 ```js
