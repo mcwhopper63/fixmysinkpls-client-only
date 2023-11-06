@@ -7,7 +7,7 @@ const Register = () => {
         <Wrapper>
             <form action="" className="form">
                 <Logo />
-                <h4>Register</h4>
+                <h3>Register</h3>
                 <FormRow type="text" name="name" defaultValue="John" />
                 <FormRow
                     type="text"

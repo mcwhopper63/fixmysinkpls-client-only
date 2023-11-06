@@ -7,7 +7,7 @@ const Login = () => {
         <Wrapper>
             <form action="" className="form">
                 <Logo />
-                <h4>login</h4>
+                <h3>login</h3>
                 <FormRow
                     name="email"
                     type="email"
