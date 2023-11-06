@@ -27,7 +27,7 @@ const Login = () => {
                 <p>
                     Not a Member?
                     <Link to="/register" className="member-btn">
-                        &nbsp;Register
+                        Register
                     </Link>
                 </p>
             </form>

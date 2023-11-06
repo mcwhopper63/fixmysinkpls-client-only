@@ -6,6 +6,11 @@ import {
     Login,
     DashboardLayout,
     Error,
+    AddJob,
+    AllJobs,
+    Stats,
+    Profile,
+    Admin,
 } from './pages';
 
 const router = createBrowserRouter([
@@ -24,8 +29,15 @@ const router = createBrowserRouter([
                 element: <Login />,
             },
             {
-                path: 'dashboardLayout',
+                path: 'dashboard',
                 element: <DashboardLayout />,
+                children: [
+                    { index: true, element: <AddJob /> },
+                    { path: 'all-jobs', element: <AllJobs /> },
+                    { path: 'stats', element: <Stats /> },
+                    { path: 'profile', element: <Profile /> },
+                    { path: 'admin', element: <Admin /> },
+                ],
             },
             {
                 path: 'error',

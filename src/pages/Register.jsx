@@ -49,7 +49,7 @@ const Register = () => {
                 <p>
                     Already a Member?
                     <Link to="/login" className="member-btn">
-                        &nbsp;Login
+                        Login
                     </Link>
                 </p>
             </form>
