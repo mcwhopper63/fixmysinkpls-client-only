@@ -8,6 +8,28 @@ const Login = () => {
             <form action="" className="form">
                 <Logo />
                 <h4>login</h4>
+                <FormRow
+                    name="email"
+                    type="email"
+                    defaultValue="john@tenant.com"
+                />
+                <FormRow
+                    name="password"
+                    type="password"
+                    defaultValue="password1234"
+                />
+                <button type="submit" className="btn btn-block">
+                    submit
+                </button>
+                <button type="button" className="btn btn-block">
+                    Explore the app
+                </button>
+                <p>
+                    Not a Member?
+                    <Link to="/register" className="member-btn">
+                        &nbsp;Register
+                    </Link>
+                </p>
             </form>
         </Wrapper>
     );

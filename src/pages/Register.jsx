@@ -17,8 +17,15 @@ const Register = () => {
                 />
                 <FormRow
                     type="text"
-                    name="location"
-                    defaultValue="Great Condo"
+                    name="propertyLocation"
+                    labelText="Property Location"
+                    defaultValue="Sleepy Hills"
+                />
+                <FormRow
+                    type="text"
+                    name="apartment"
+                    // labelText="Property Location"
+                    defaultValue="19H"
                 />
                 <FormRow
                     type="email"
@@ -30,13 +37,19 @@ const Register = () => {
                     name="password"
                     defaultValue="password1234"
                 />
+                <FormRow
+                    type="text"
+                    name="phone number"
+                    labelText="phone number"
+                    defaultValue="212-888-7777"
+                />
                 <button type="submit" className="btn btn-block">
                     submit
                 </button>
                 <p>
-                    Already a member?
+                    Already a Member?
                     <Link to="/login" className="member-btn">
-                        Login
+                        &nbsp;Login
                     </Link>
                 </p>
             </form>
