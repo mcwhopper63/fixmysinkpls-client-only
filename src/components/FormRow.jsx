@@ -1,5 +1,3 @@
-import { Logo } from './Logo';
-
 const FormRow = ({ type, name, labelText, defaultValue }) => {
     return (
         <div className="form-row">
@@ -7,11 +5,11 @@ const FormRow = ({ type, name, labelText, defaultValue }) => {
                 {labelText || name}
             </label>
             <input
-                type="text"
-                id="name"
-                name="name"
+                type={type}
+                id={name}
+                name={name}
                 className="form-input"
-                defaultValue="Renato"
+                defaultValue={defaultValue || name}
                 required
             />
         </div>
