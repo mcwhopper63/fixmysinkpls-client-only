@@ -1,4 +1,11 @@
+import { Logo } from '../components';
+
 const AddJob = () => {
-    return <h1>AddJob</h1>;
+    return (
+        <div>
+            <h1>add job</h1>
+            <Logo />
+        </div>
+    );
 };
 export default AddJob;
