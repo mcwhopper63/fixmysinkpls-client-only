@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import Wrapper from '../assets/wrappers/SharedLayout';
+import Wrapper from '../assets/wrappers/DashboardFormPage';
 import { Navbar, BigSidebar, SmallSidebar } from '../components';
 import { createContext, useState, useContext } from 'react';
 
@@ -15,6 +15,7 @@ const DashboardLayout = () => {
     };
 
     const toggleSidebar = () => {
+        console.log('sidebar toggled');
         setShowSidebar(!showSidebar);
     };
 

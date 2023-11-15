@@ -12,7 +12,7 @@ const Navbar = () => {
                 <button
                     className="toggle-btn"
                     type="button"
-                    onClick={toggleSidebar()}
+                    onClick={toggleSidebar}
                 >
                     <FaAlignLeft />
                 </button>
@@ -20,7 +20,7 @@ const Navbar = () => {
                     <Logo />
                     <h4 className="logo-text">Fix My Sink Pls</h4>
                 </div>
-                <div className="btn-container" onClick={logoutUser()}>
+                <div className="btn-container" onClick={logoutUser}>
                     toggle/logout
                 </div>
             </div>
