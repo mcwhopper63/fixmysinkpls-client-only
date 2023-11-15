@@ -4,6 +4,7 @@ import { FaTimes } from 'react-icons/fa';
 import links from '../utils/links';
 import { NavLink } from 'react-router-dom';
 import Logo from './Logo';
+import NavLinks from './NavLinks';
 
 const SmallSidebar = () => {
     const { showSidebar, toggleSidebar } = useDashboardContext();
@@ -18,28 +19,17 @@ const SmallSidebar = () => {
                 }
             >
                 <div className="content">
-                    <button className="close-btn" type="button">
+                    <button
+                        className="close-btn"
+                        type="button"
+                        onClick={toggleSidebar}
+                    >
                         <FaTimes />
                     </button>
                     <header>
                         <Logo />
                     </header>
-                    <div className="nav-links">
-                        {links.map((link) => {
-                            const { text, path, icon } = link;
-
-                            return (
-                                <NavLink
-                                    to={path}
-                                    key={text}
-                                    className="nav-link"
-                                >
-                                    <span className="icon">{icon}</span>
-                                    {text}
-                                </NavLink>
-                            );
-                        })}
-                    </div>
+                    <NavLinks />
                 </div>
             </div>
         </Wrapper>
