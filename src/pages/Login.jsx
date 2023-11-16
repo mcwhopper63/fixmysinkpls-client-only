@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import Wrapper from '../assets/wrappers/RegisterPage';
+import Wrapper from '../assets/wrappers/RegisterAndLoginPage';
 import { Logo, FormRow } from '../components';
 
 const Login = () => {

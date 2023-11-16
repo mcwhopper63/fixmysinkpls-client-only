@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import Wrapper from '../assets/wrappers/DashboardFormPage';
+import Wrapper from '../assets/wrappers/Dashboard';
 import { Navbar, BigSidebar, SmallSidebar } from '../components';
 import { createContext, useState, useContext } from 'react';
 
